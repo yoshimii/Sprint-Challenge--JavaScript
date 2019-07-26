@@ -29,9 +29,10 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+The biggest difference between them is that forEach doesn't return anything and map does. Map returns a copy of the entire array, while forEach will only run a specified function on each index and update array with those mutated values. 
 
 2. What is the difference between a function and a method?
-
+A method is a function inside an object. So we can't just access it like method(). We have to append the object to that method to make accessible. In other words it needs context to be useful. Buuuut also... No difference. Everything in JavaScript is an object. 
 3. What is closure?
 
 4. Describe the four rules of the 'this' keyword.
