@@ -40,7 +40,7 @@ function greeting(v, w){
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-//Since nestedFunction() is defined in myFunction, it has access to myFunction's variables. This is due to lexical scoping and does not work the other way around.
+//Since nestedFunction() is defined in myFunction, it has access to myFunction's variables. This is due to lexical scoping and does not work the other way around. You cannot access variables defined inside a function from outside unless that function allowed it out with say a return. 
 
 const external = "I'm outside the function";
 
