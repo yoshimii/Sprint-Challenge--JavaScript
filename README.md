@@ -29,15 +29,16 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+The biggest difference between them is that forEach doesn't return anything and map does. Map returns a copy of the entire array, while forEach will only run a specified function on each index and update array with those mutated values. 
 
 2. What is the difference between a function and a method?
-
+A method is a function inside an object. So we can't just access it like method(). We have to append the object to that method to make accessible. In other words it needs context to be useful. Buuuut also... No difference. Everything in JavaScript is an object. 
 3. What is closure?
-
+Closure is the set of rules that JavaScript uses to contain and control access to variables. There are varying levels of scope: Function scope (inside the function), block scope (inside curly braces - 'let' and 'const' have this), and global scope (everything has access to the global scope). Then there's lexical scope, which is the ability for a nested funciton to have access to variables defined outside of the function. This does not work the other way around. You cannot get access to variables defined inside a function without allowing those values out such as with a return statement. 
 4. Describe the four rules of the 'this' keyword.
-
+Window binding: This is bound to the window object in the browser or global in node when used in the global scope. Implicit binding: the context for this is the object or the object to the left of the dot. New binding: The contex for this is the specific instance of an object created using the word 'new' + Cunstructor. Explicit binding: Overriding the original context of this using the methods '.bind,' '.call,' or '.apply'. Whatever gets passed into the method ignores the original object context and passes in a different objects methods.  
 5. Why do we need super() in an extended class?
-
+'super()' calls in the methods of the parent Class. If extends says come here, super says this is what I need from you. 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
